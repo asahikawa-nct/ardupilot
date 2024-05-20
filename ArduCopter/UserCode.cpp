@@ -26,7 +26,7 @@ void Copter::userhook_50Hz()
 void Copter::userhook_MediumLoop()
 {
     // put your 10Hz code here
-    if(hal.rcin->read(ch_8)>1512){
+    if(hal.rcin->read(CH_8)>1512){
         gcs().send_text(MAV_SEVERITY_INFO, "RCIN8 is HIGH");
     }
 }
